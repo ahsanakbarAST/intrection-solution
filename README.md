@@ -31,7 +31,7 @@ To run this project locally, follow these steps:
 ## API Endpoints    
 ###################################################################
 ## Authentication
-POST
+POST.
 http://127.0.0.1:8000/api/auth/register
 Query Params
 name : carlos
@@ -39,35 +39,37 @@ email : carlosbrathwaite01@gmail.com
 password : 12345678
 
 POST
-http://127.0.0.1:8000/api/auth/login
-Query Params
-email : carlosbrathwaite.rad@gmail.com
-password : 12345678
+http://127.0.0.1:8000/api/auth/login .
+Query Params.
+- email : carlosbrathwaite.rad@gmail.com
+- password : 12345678
 
 ## Interactions
 POST
-http://127.0.0.1:8000/api/interactions
+http://127.0.0.1:8000/api/interactions .
 
-Request Headers
--Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
-Query Params
--label : Subscribe Button
--type : button
+Request Headers.
+- Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+Query Params.
+- label : Subscribe Button
+- type : button
 
 GET
-http://127.0.0.1:8000/api/interactions
-Request Headers
-Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+http://127.0.0.1:8000/api/interactions .
+
+Request Headers.
+- Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
 
 PUT
-http://127.0.0.1:8000/api/interactions/1
-Request Headers
-Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
-Query Params
-type : button
-label : login button
+http://127.0.0.1:8000/api/interactions/1 .
 
-Delete
+Request Headers.
+- Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+Query Params.
+- type : button
+- label : login button
+
+Delete.
 http://127.0.0.1:8000/api/interactions/2
-Request Headers
-Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+Request Headers.
+- Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
