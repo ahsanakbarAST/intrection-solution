@@ -58,4 +58,15 @@ class InteractionController extends Controller
 
         return response()->json(['message' => 'Interaction updated successfully', 'interaction' => $interaction], 200);
     }
+    public function destroy($id)
+    {
+        $interaction = Interaction::find($id);
+
+        if (!$interaction) {
+            return response()->json(['message' => 'Interaction not found'], 404);
+        }
+        $interaction->delete();
+
+        return response()->json(['message' => 'Interaction deleted successfully'], 200);
+    }
 }

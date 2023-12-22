@@ -4,8 +4,8 @@ This project is a solution for managing interactions on websites. It provides AP
 
 ## Technologies Used
 
-- Laravel: [Version X.X](https://laravel.com/) - PHP framework for building the backend.
-- MySQL: [Version X.X](https://www.mysql.com/) - Database system used for storing data.
+- Laravel: [Version 10.37.3](https://laravel.com/) - PHP framework for building the backend.
+- MySQL: (https://www.mysql.com/) - Database system used for storing data.
 - Heroku: [Link to Heroku](https://www.heroku.com/) - Deployment platform.
 
 ## Installation
@@ -14,7 +14,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ahsanakbarAST/intrection-solution.git
    cd interaction-solution
 2. Install dependencies:
     composer install
@@ -29,13 +29,44 @@ To run this project locally, follow these steps:
 
 
 ## API Endpoints    
+###################################################################
 ## Authentication
-    POST /api/auth/register: Register a new user.
-    POST /api/auth/login: Login and get an authentication token.
+POST
+http://127.0.0.1:8000/api/auth/register
+Query Params
+name : carlos
+email : carlosbrathwaite01@gmail.com
+password : 12345678
+
+POST
+http://127.0.0.1:8000/api/auth/login
+Query Params
+email : carlosbrathwaite.rad@gmail.com
+password : 12345678
 
 ## Interactions
+POST
+http://127.0.0.1:8000/api/interactions
+Request Headers
+Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+Query Params
+label : Subscribe Button
+ type : button
 
-    POST /api/interactions: Create a new interaction.
-    GET /api/interactions/{id}: Get details of a specific interaction.
-    PUT /api/interactions/{id}: Update an existing interaction.
-    DELETE /api/interactions/{id}: Delete an interaction.
+GET
+http://127.0.0.1:8000/api/interactions
+Request Headers
+Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+
+PUT
+http://127.0.0.1:8000/api/interactions/1
+Request Headers
+Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+Query Params
+type : button
+label : login button
+
+Delete
+http://127.0.0.1:8000/api/interactions/2
+Request Headers
+Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
