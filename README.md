@@ -47,11 +47,12 @@ password : 12345678
 ## Interactions
 POST
 http://127.0.0.1:8000/api/interactions
+
 Request Headers
-Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
+-Authorization : Bearer 7|Co6NZjAqbQS2vUJKvWOOkejd2fYlY5SOCFs6ZhDF6d3456bf
 Query Params
-label : Subscribe Button
- type : button
+-label : Subscribe Button
+-type : button
 
 GET
 http://127.0.0.1:8000/api/interactions
